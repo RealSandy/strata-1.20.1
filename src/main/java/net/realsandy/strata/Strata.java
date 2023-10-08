@@ -2,6 +2,9 @@ package net.realsandy.strata;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.realsandy.strata.block.ModBlocks;
+import net.realsandy.strata.item.ModItemGroups;
+import net.realsandy.strata.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,7 +14,10 @@ public class Strata implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+
 	}
 }
