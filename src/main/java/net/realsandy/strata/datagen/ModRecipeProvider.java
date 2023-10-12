@@ -26,5 +26,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         //        .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
         //        .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
         //        .offerTo(exporter, new Identifier(getRecipeName(ModItems.RUBY_PICKAXE)));
+
     }
 }

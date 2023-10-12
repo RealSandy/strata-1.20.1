@@ -20,8 +20,18 @@ public class ModItemGroups {
     public static final ItemGroup STRATA_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(Strata.MOD_ID, "strata_group"),
                 FabricItemGroup.builder().displayName(Text.translatable("itemgroup.strata_group"))
-                   .icon(() -> new ItemStack(ModItems.AEROLITE_PLATING)).entries((displayContext, entries) -> {
-                       entries.add(ModItems.AEROLITE_PLATING);
+                   .icon(() -> new ItemStack(ModItems.AEROLITE_INGOT)).entries((displayContext, entries) -> {
+                       entries.add(ModItems.AEROLITE_INGOT);
+                       entries.add(ModItems.AEROLITE_UPGRADE_SMITHING_TEMPLATE);
+                       entries.add(ModItems.AEROLITE_HELMET);
+                       entries.add(ModItems.AEROLITE_CHESTPLATE);
+                       entries.add(ModItems.AEROLITE_LEGGINGS);
+                       entries.add(ModItems.AEROLITE_BOOTS);
+                       entries.add(ModItems.TRUE_AEROLITE_HELMET);
+                       entries.add(ModItems.TRUE_AEROLITE_CHESTPLATE);
+                       entries.add(ModItems.TRUE_AEROLITE_LEGGINGS);
+                       entries.add(ModItems.TRUE_AEROLITE_BOOTS);
+
 
                     }).build());
 

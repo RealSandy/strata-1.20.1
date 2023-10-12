@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "strata:aerolite_helmet",
+    "strata:aerolite_chestplate",
+    "strata:aerolite_leggings",
+    "strata:aerolite_boots",
+    "strata:true_aerolite_helmet",
+    "strata:true_aerolite_chestplate",
+    "strata:true_aerolite_leggings",
+    "strata:true_aerolite_boots"
+  ]
+}

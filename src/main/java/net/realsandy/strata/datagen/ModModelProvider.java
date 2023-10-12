@@ -24,11 +24,21 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         //itemModelGenerator.register(ModItems.exampleItem, Models.GENERATED);
-        itemModelGenerator.register(ModItems.AEROLITE_PLATING, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AEROLITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AEROLITE_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
 
         //itemModelGenerator.register(ModItems.exampleTool, Models.HANDHELD);
 
         //itemModelGenerator.registerArmor((ArmorItem) ModItems.exampleArmor);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AEROLITE_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AEROLITE_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AEROLITE_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AEROLITE_BOOTS);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.TRUE_AEROLITE_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.TRUE_AEROLITE_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.TRUE_AEROLITE_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.TRUE_AEROLITE_BOOTS);
 
     }
 }

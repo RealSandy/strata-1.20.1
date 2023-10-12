@@ -12,7 +12,13 @@ import java.util.function.Supplier;
 public enum ModArmorMaterials implements ArmorMaterial {
     //exampleTier("id", 25, new int[] { 3, 8, 6, 3 }, 19,
     //        SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2f, 0.1f, () -> Ingredient.ofItems(ModItems.item))
-    ;
+
+    AEROLITE("aerolite", 35, new int[] { 3, 6, 8, 3 }, 15,
+            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0f, 0.1f,
+            () -> Ingredient.ofItems(ModItems.AEROLITE_INGOT)),
+    TRUE_AEROLITE("true_aerolite", 40, new int[] { 4, 7, 9, 4 }, 27,
+    SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0f, 0.5f,
+            () -> Ingredient.ofItems(ModItems.AEROLITE_INGOT));
 
     private final String name;
     private final int durabilityMultiplier;

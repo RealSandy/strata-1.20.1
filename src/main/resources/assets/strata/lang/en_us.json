@@ -2,6 +2,22 @@
 
   "itemgroup.strata_group": "Strata",
 
-  "item.strata.aerolite_plating": "Aerolite Plating"
+  "item.strata.aerolite_plating": "Aerolite Ingot",
 
+  "item.strata.aerolite_helmet": "Aerolite Helmet",
+  "item.strata.aerolite_chestplate": "Aerolite Chestplate",
+  "item.strata.aerolite_leggings": "Aerolite Leggings",
+  "item.strata.aerolite_boots": "Aerolite Boots",
+
+  "item.strata.true_aerolite_helmet": "True Aerolite Helmet",
+  "item.strata.true_aerolite_chestplate": "True Aerolite Chestplate",
+  "item.strata.true_aerolite_leggings": "True Aerolite Leggings",
+  "item.strata.true_aerolite_boots": "True Aerolite Boots",
+
+
+  "upgrade.strata.aerolite.applies_to": "Diamond and Netherite Equipment",
+  "upgrade.strata.aerolite.ingredients": "Aerolite Plating",
+  "upgrade.strata.aerolite": "Aerolite Upgrade",
+  "upgrade.strata.aerolite.base_slot_text": "Add Diamond or Netherite armor, weapon or tool",
+  "upgrade.strata.aerolite.additions_slot_text": "Add Aerolite Plating"
 }
