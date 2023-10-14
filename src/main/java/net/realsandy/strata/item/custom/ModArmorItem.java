@@ -16,6 +16,7 @@ import net.realsandy.strata.item.ModArmorMaterials;
 import org.jetbrains.annotations.Nullable;
 
 import java.text.Normalizer;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -33,6 +34,7 @@ public class ModArmorItem extends ArmorItem {
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
+
         if(!world.isClient()) {
             if(entity instanceof PlayerEntity player && hasFullSuitOfArmorOn(player)) {
                 evaluateArmorEffects(player);
@@ -98,10 +100,14 @@ public class ModArmorItem extends ArmorItem {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if(material == ModArmorMaterials.AEROLITE || material == ModArmorMaterials.TRUE_AEROLITE) {
-            tooltip.add(Text.translatable("tooltip.strata.aerolite_armor.tooltip_quote_line_1").formatted(Formatting.ITALIC, Formatting.DARK_PURPLE));
-            tooltip.add(Text.translatable("tooltip.strata.aerolite_armor.tooltip_quote_line_2").formatted(Formatting.ITALIC, Formatting.DARK_PURPLE));
-            tooltip.add(Text.translatable("tooltip.strata.aerolite_armor.tooltip_explanation_line_1").formatted(Formatting.AQUA));
-            tooltip.add(Text.translatable("tooltip.strata.aerolite_armor.tooltip_explanation_line_2").formatted(Formatting.AQUA));
+
+            tooltip.add(Text.translatable("tooltip.strata.aerolite_armor.tooltip_quote_line_1").formatted(Formatting.ITALIC, Formatting.YELLOW));
+            tooltip.add(Text.translatable("tooltip.strata.aerolite_armor.tooltip_quote_line_2").formatted(Formatting.ITALIC, Formatting.YELLOW));
+            tooltip.add(Text.translatable("tooltip.strata.blank_line"));
+
+            tooltip.add(Text.translatable("tooltip.strata.aerolite_armor.tooltip_explanation_line_1").formatted(Formatting.GOLD));
+            tooltip.add(Text.translatable("tooltip.strata.aerolite_armor.tooltip_explanation_line_2").formatted(Formatting.GOLD));
+            tooltip.add(Text.translatable("tooltip.strata.aerolite_armor.tooltip_total_equipped"));
         }
         super.appendTooltip(stack, world, tooltip, context);
     }

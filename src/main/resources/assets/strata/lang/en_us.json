@@ -34,8 +34,11 @@
   "upgrade.strata.aerolite.base_slot_text": "Add Diamond or Netherite armor, weapon or tool",
   "upgrade.strata.aerolite.additions_slot_text": "Add Aerolite Plating",
 
-  "tooltip.strata.aerolite_armor.tooltip_quote_line_1": "\"POLARIS INTERSTELLAR RECONNAISSANCE INFORMANT,",
-  "tooltip.strata.aerolite_armor.tooltip_quote_line_2": "      REPORTING FOR DUTY.\"",
-  "tooltip.strata.aerolite_armor.tooltip_explanation_line_1": "A full set makes the wearer as light as air.",
-  "tooltip.strata.aerolite_armor.tooltip_explanation_line_2": "Crouch to fall faster."
+  "tooltip.strata.aerolite_armor.tooltip_quote_line_1": "\"Polaris Interstellar Research & Intelligence,",
+  "tooltip.strata.aerolite_armor.tooltip_quote_line_2": "      Strata Unit reporting for duty!\"",
+  "tooltip.strata.aerolite_armor.tooltip_explanation_line_1": "A full set makes the wearer light as a feather.",
+  "tooltip.strata.aerolite_armor.tooltip_explanation_line_2": "Hold SHIFT to fall faster.",
+  "tooltip.strata.aerolite_armor.tooltip.total_equipped": "(%d/4 equipped)",
+
+  "tooltip.strata.blank_line": ""
 }
