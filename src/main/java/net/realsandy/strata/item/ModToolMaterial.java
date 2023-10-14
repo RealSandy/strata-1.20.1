@@ -8,7 +8,10 @@ import java.util.function.Supplier;
 public enum ModToolMaterial implements ToolMaterial {
     //RUBY(5, 1280, 12.0f, 3.5f, 26,
     //        () -> Ingredient.ofItems(ModItems.RUBY))
-    ;
+    AEROLITE(4, 2031, 9.0f, 4.0f,
+            15, () -> Ingredient.ofItems(ModItems.AEROLITE_INGOT)),
+    TRUE_AEROLITE(4, 3096, 12.0f, 5.0f,
+            20, () -> Ingredient.ofItems(ModItems.AEROLITE_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;

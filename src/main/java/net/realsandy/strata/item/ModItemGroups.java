@@ -31,6 +31,16 @@ public class ModItemGroups {
                        entries.add(ModItems.TRUE_AEROLITE_CHESTPLATE);
                        entries.add(ModItems.TRUE_AEROLITE_LEGGINGS);
                        entries.add(ModItems.TRUE_AEROLITE_BOOTS);
+                       entries.add(ModItems.AEROLITE_SWORD);
+                       entries.add(ModItems.AEROLITE_PICKAXE);
+                       entries.add(ModItems.AEROLITE_AXE);
+                       entries.add(ModItems.AEROLITE_SHOVEL);
+                       entries.add(ModItems.AEROLITE_HOE);
+                       entries.add(ModItems.TRUE_AEROLITE_SWORD);
+                       entries.add(ModItems.TRUE_AEROLITE_PICKAXE);
+                       entries.add(ModItems.TRUE_AEROLITE_AXE);
+                       entries.add(ModItems.TRUE_AEROLITE_SHOVEL);
+                       entries.add(ModItems.TRUE_AEROLITE_HOE);
 
 
                     }).build());

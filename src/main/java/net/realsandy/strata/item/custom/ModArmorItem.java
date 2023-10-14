@@ -1,6 +1,7 @@
 package net.realsandy.strata.item.custom;
 
 import com.google.common.collect.ImmutableMap;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -8,17 +9,22 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 import net.realsandy.strata.item.ModArmorMaterials;
+import org.jetbrains.annotations.Nullable;
 
+import java.text.Normalizer;
+import java.util.List;
 import java.util.Map;
 
 public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.AEROLITE, new StatusEffectInstance(StatusEffects.SLOW_FALLING, 1, 1,
+                    .put(ModArmorMaterials.AEROLITE, new StatusEffectInstance(StatusEffects.SLOW_FALLING, 1, 0,
                             false, false, false))
-                    .put(ModArmorMaterials.TRUE_AEROLITE, new StatusEffectInstance(StatusEffects.SLOW_FALLING, 1, 1,
+                    .put(ModArmorMaterials.TRUE_AEROLITE, new StatusEffectInstance(StatusEffects.SLOW_FALLING, 1, 0,
                             false, false, false)).build();
 
     public ModArmorItem(ArmorMaterial material, Type type, Settings settings) {
@@ -87,6 +93,17 @@ public class ModArmorItem extends ArmorItem {
 
         return helmet.getMaterial() == material && breastplate.getMaterial() == material &&
                 leggings.getMaterial() == material && boots.getMaterial() == material;
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        if(material == ModArmorMaterials.AEROLITE || material == ModArmorMaterials.TRUE_AEROLITE) {
+            tooltip.add(Text.translatable("tooltip.strata.aerolite_armor.tooltip_quote_line_1").formatted(Formatting.ITALIC, Formatting.DARK_PURPLE));
+            tooltip.add(Text.translatable("tooltip.strata.aerolite_armor.tooltip_quote_line_2").formatted(Formatting.ITALIC, Formatting.DARK_PURPLE));
+            tooltip.add(Text.translatable("tooltip.strata.aerolite_armor.tooltip_explanation_line_1").formatted(Formatting.AQUA));
+            tooltip.add(Text.translatable("tooltip.strata.aerolite_armor.tooltip_explanation_line_2").formatted(Formatting.AQUA));
+        }
+        super.appendTooltip(stack, world, tooltip, context);
     }
 }
 

@@ -27,6 +27,17 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.AEROLITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.AEROLITE_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.AEROLITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AEROLITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AEROLITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AEROLITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AEROLITE_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.TRUE_AEROLITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.TRUE_AEROLITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.TRUE_AEROLITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.TRUE_AEROLITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.TRUE_AEROLITE_HOE, Models.HANDHELD);
+
         //itemModelGenerator.register(ModItems.exampleTool, Models.HANDHELD);
 
         //itemModelGenerator.registerArmor((ArmorItem) ModItems.exampleArmor);

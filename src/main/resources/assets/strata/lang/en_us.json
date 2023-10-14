@@ -1,8 +1,7 @@
 {
-
   "itemgroup.strata_group": "Strata",
 
-  "item.strata.aerolite_plating": "Aerolite Ingot",
+  "item.strata.aerolite_ingot": "Aerolite Ingot",
 
   "item.strata.aerolite_helmet": "Aerolite Helmet",
   "item.strata.aerolite_chestplate": "Aerolite Chestplate",
@@ -14,10 +13,29 @@
   "item.strata.true_aerolite_leggings": "True Aerolite Leggings",
   "item.strata.true_aerolite_boots": "True Aerolite Boots",
 
+  "item.strata.aerolite_sword": "Aerolite Sword",
+  "item.strata.aerolite_pickaxe": "Aerolite Pickaxe",
+  "item.strata.aerolite_axe": "Aerolite Axe",
+  "item.strata.aerolite_shovel": "Aerolite Shovel",
+  "item.strata.aerolite_hoe": "Aerolite Hoe",
+
+  "item.strata.true_aerolite_sword": "True Aerolite Sword",
+  "item.strata.true_aerolite_pickaxe": "True Aerolite Pickaxe",
+  "item.strata.true_aerolite_axe": "True Aerolite Axe",
+  "item.strata.true_aerolite_shovel": "True Aerolite Shovel",
+  "item.strata.true_aerolite_hoe": "True Aerolite Hoe",
+
+
+
 
   "upgrade.strata.aerolite.applies_to": "Diamond and Netherite Equipment",
   "upgrade.strata.aerolite.ingredients": "Aerolite Plating",
   "upgrade.strata.aerolite": "Aerolite Upgrade",
   "upgrade.strata.aerolite.base_slot_text": "Add Diamond or Netherite armor, weapon or tool",
-  "upgrade.strata.aerolite.additions_slot_text": "Add Aerolite Plating"
+  "upgrade.strata.aerolite.additions_slot_text": "Add Aerolite Plating",
+
+  "tooltip.strata.aerolite_armor.tooltip_quote_line_1": "\"POLARIS INTERSTELLAR RECONNAISSANCE INFORMANT,",
+  "tooltip.strata.aerolite_armor.tooltip_quote_line_2": "      REPORTING FOR DUTY.\"",
+  "tooltip.strata.aerolite_armor.tooltip_explanation_line_1": "A full set makes the wearer as light as air.",
+  "tooltip.strata.aerolite_armor.tooltip_explanation_line_2": "Crouch to fall faster."
 }
